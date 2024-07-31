@@ -1,12 +1,13 @@
 import CartWidget from './CartWidget'
 import Titulo from './Titulo'
 
+
 const NavBar = () => {
   return (
-    <nav>
+    <nav className='cabecera' >
         <div>
         <Titulo/>
-        </div>
+        </div >
             <ul>
                 <li>Accion</li>
                 <li>Aventura</li>

@@ -2,16 +2,22 @@
     background-color: black;
     color: azure;
     font-size: 25px;
-    position: right;
+
+}
+.cabecera {
+    display: flex;
 }
 .carrito {
-    text-align: center;
+   position: right;
 
     margin-left: 50rem;
     background-color: rgb(64, 165, 165);
     color: blue;
 }
 .item {
-    background-color: red;
+    background-color: rgb(116, 111, 111);
     text-align: center;
+    display: flexbox;
 }
+
+
