@@ -7,15 +7,15 @@ const ItemDetailContainer = () => {
 const [producto, setProducto] = useState({})
 const { idProducto } = useParams()
 
-/*useEffect((idProducto) => {
+useEffect(() => {
     obtenerProductos()
     .then ((data) =>{
-        const productoDetalle = data.find( (productoData) => productoData.id === idProducto )
+        const productoDetalle = data.find( (productoData) => productoData.id === parseInt(idProducto) )
         setProducto(productoDetalle)
     })
-}, [idProducto])*/
+}, [])
 
-useEffect(() => {
+/*useEffect(() => {
   obtenerProductos()
   .then((data) =>{
     if (idProducto) {
@@ -31,7 +31,7 @@ useEffect(() => {
   });
 }, []);
 
-
+*/
   return (
 <ItemDetail  producto={producto}/>
   )
