@@ -1,23 +1,43 @@
+.contenedor {
+    display: flex;
+}
 .titulo {
-    background-color: black;
-    color: azure;
-    font-size: 25px;
-
+margin-left: 450px;
+font-size: 2rem;
+}
+.carrito {
+    margin-left: 450px;
+    color: rgb(8, 8, 10);
+    padding: 20px;
 }
 .cabecera {
     display: flex;
+    justify-content: center;
+    background-color: rgb(234, 238, 227);
 }
-.carrito {
-   position: right;
-
-    margin-left: 50rem;
-    background-color: rgb(64, 165, 165);
-    color: blue;
+.cabecera a{
+    color: rgb(10, 7, 7);
+    padding: 20px 35px;
+    text-decoration: none;
 }
-.item {
-    background-color: rgb(116, 111, 111);
+.cabecera a:hover{
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+.prod {
+    display: flex;
+    padding: 10px 40px;
+    justify-content: center;
+}
+.prod a{
+    text-decoration: none;
+}
+.cartaProducto:hover{
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+.texto {
+    color: black;
     text-align: center;
-    display: flexbox;
+    font-size: 2rem;
 }
 
 

@@ -1,7 +1,7 @@
 const productos = [
     {
       id: 1,
-      nombre: "Harry Potter y la Piedra Filosofal",
+      nombre: "Harry Potter 1",
       descripcion: "Al cumplir 11 años, Harry Potter descubre que es un mago y que le esperan como alumno en la Escuela Hogwarts de Magia y Hechicería.",
       precio: "$17.000",
       categoria: "magia",
@@ -10,7 +10,7 @@ const productos = [
     },
     {
       id: 2,
-      nombre: "Harry Potter y la Orden del Fenix",
+      nombre: "Harry Potter 5",
       descripcion: "",
       precio: "$18.000",
       categoria: "magia",
@@ -19,7 +19,7 @@ const productos = [
     },
     {
         id: 3,
-        nombre: "Narnia el Leon, la Bruja y el ropero",
+        nombre: "Narnia 1",
         descripcion: "",
         precio: "$15.000",
         categoria: "aventura",
@@ -28,7 +28,7 @@ const productos = [
       },
       {
         id: 4,
-        nombre: "Narnia el Principe Caspian",
+        nombre: "Narnia 2",
         descripcion: "",
         precio: "$14.000",
         categoria: "aventura",

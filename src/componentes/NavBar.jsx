@@ -1,19 +1,17 @@
-import CartWidget from './CartWidget'
-import Titulo from './Titulo'
 
+import { Link } from "react-router-dom"
 
 const NavBar = () => {
   return (
-    <nav className='cabecera' >
-        <div>
-        <Titulo/>
-        </div >
-            <ul>
-                <li>Accion</li>
-                <li>Aventura</li>
-                <li>Magia</li>
-            </ul>
-            <CartWidget/>
+    <nav>
+
+        <div className='cabecera' >
+          <Link to="/">Inicio</Link>
+          <Link to="/categoria/aventura">Aventura</Link>
+          <Link to="/categoria/magia">Magia</Link>
+        </div>
+
+          
 
     </nav>
   )
