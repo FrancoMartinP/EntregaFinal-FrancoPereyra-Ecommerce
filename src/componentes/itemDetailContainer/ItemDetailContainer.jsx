@@ -15,23 +15,6 @@ useEffect(() => {
     })
 }, [])
 
-/*useEffect(() => {
-  obtenerProductos()
-  .then((data) =>{
-    if (idProducto) {
-      const productoDetalle = data.filter ( (productoData)=> productoData.categoria === idProducto)
-      setProducto(productoDetalle)
-    }
-  })
-  .catch((error)=>{
-    console.error(error);
-  })
-  .finally(() =>{
-    console.log("Finalizo la carga")
-  });
-}, []);
-
-*/
   return (
 <ItemDetail  producto={producto}/>
   )
