@@ -13,10 +13,10 @@ font-size: 2rem;
 .cabecera {
     display: flex;
     justify-content: center;
-    background-color: rgb(234, 238, 227);
+    background-color: rgb(196, 145, 51);
 }
 .cabecera a{
-    color: rgb(10, 7, 7);
+    color: rgb(20, 12, 12);
     padding: 20px 35px;
     text-decoration: none;
 }
@@ -27,6 +27,8 @@ font-size: 2rem;
     display: flex;
     padding: 10px 40px;
     justify-content: center;
+    /*transform: scale;
+    transition: 0.3s ease-in-out;*/
 }
 .prod a{
     text-decoration: none;

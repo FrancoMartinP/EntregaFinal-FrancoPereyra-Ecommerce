@@ -8,6 +8,8 @@ import ItemDetailContainer from './componentes/itemDetailContainer/ItemDetailCon
 import CartWidget from './componentes/CartWidget'
 import Titulo from './componentes/Titulo'
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
+import FormularioCompra from './componentes/FormularioCompra'
+import { CartProvider } from './context/CartContext'
 
 
 /*import ComponentePadre from './componentes/ComponentePadre'
@@ -16,7 +18,9 @@ import LogoHarry from './imagen/harry.jpg'*/
 const App = () => {
  return (
  <BrowserRouter>
-    <div className='contenedor'>
+ <CartProvider>
+
+ <div className='contenedor'>
       <Link to="/">
         <img src={logoTienda} alt="" />
       </Link>
@@ -32,8 +36,11 @@ const App = () => {
       <Route path='/' element={<ItemListContainer className="item" />}/>
       <Route path='/categoria/:idCategoria' element={<ItemListContainer className="item" />} />
       <Route path='/descripcion/:idProducto' element={<ItemDetailContainer />}/>
+      <Route path='/compra' element={<FormularioCompra />} />
     </Routes>
 
+ </CartProvider>
+    
 
  </BrowserRouter>
 
