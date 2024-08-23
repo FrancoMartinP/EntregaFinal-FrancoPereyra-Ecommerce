@@ -1,13 +1,16 @@
 import ItemCount from "./ItemCount"
-import { useContext } from "react"
+import { useContext, useState } from "react"
 import { CartContext } from "../../context/CartContext"
+import { Link } from "react-router-dom"
 
 const ItemDetail = ( {producto} ) => {
   const {agregarProducto} = useContext(CartContext)
+  const [mostrarItemCount, setMostrarItemCount] = useState(true);
 
   const agregarAlCarrito = (contador) => {
     const productoCarrito = {...producto, cantidad: contador}
     agregarProducto(productoCarrito)
+    setMostrarItemCount(false)
   }
   return (
     <div className="item">
@@ -18,8 +21,10 @@ const ItemDetail = ( {producto} ) => {
         <div>
             <p>{producto.descripcion}</p>
             <p><b>{producto.precio}</b> </p>
+            {mostrarItemCount ? (<ItemCount stock={producto.stock} agregarAlCarrito={agregarAlCarrito}/>) :
+            (<Link to="/cart">Ir al Carrito</Link>)}
         </div>
-       <ItemCount stock={producto.stock} agregarAlCarrito={agregarAlCarrito}/>
+       
     </div>
   )
 }
