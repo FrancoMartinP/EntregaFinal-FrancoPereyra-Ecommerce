@@ -9,7 +9,7 @@ const [producto, setProducto] = useState({})
 const { idProducto } = useParams()
 
 const getProduct = async() => {
-  const docRef = doc(db, "prodcutos", idProducto)
+  const docRef = doc(db, "productos", idProducto)
   const dataDb = await getDoc(docRef)
   const data = {id: dataDb.id, ...dataDb.data()}
   setProducto(data)
