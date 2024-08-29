@@ -15,7 +15,7 @@ const ItemDetail = ( {producto} ) => {
   return (
     <div className="item">
         <div>
-            <img src={producto.imagen} alt="" />
+            <img src={producto.imagen} width={200} />
             <h1>{producto.nombre}</h1>
         </div>
         <div>
