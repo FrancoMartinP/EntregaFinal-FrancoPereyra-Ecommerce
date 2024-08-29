@@ -19,8 +19,8 @@ const ItemDetail = ( {producto} ) => {
             <h1>{producto.nombre}</h1>
         </div>
         <div>
-            <p>{producto.descripcion}</p>
-            <p><b>{producto.precio}</b> </p>
+            <p>Sinopsis: {producto.descripcion}</p>
+            <p><b>Precio: ${producto.precio}</b> </p>
             {mostrarItemCount ? (<ItemCount stock={producto.stock} agregarAlCarrito={agregarAlCarrito}/>) :
             (<Link to="/cart">Ir al Carrito</Link>)}
         </div>

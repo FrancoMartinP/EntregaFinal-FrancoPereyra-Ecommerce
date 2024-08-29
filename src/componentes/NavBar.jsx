@@ -9,6 +9,7 @@ const NavBar = () => {
           <Link to="/">Inicio</Link>
           <Link to="/categoria/aventura">Aventura</Link>
           <Link to="/categoria/magia">Magia</Link>
+          <Link to="/categoria/fantasia">Fantasia</Link>
         </div>
 
           

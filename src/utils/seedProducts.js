@@ -1,3 +1,5 @@
+
+
 const productos = [
     {
       id: 1,
@@ -15,7 +17,7 @@ const productos = [
       precio: "120",
       categoria: "magia",
       stock: 10,
-      imagen: 'https://picfiles.alphacoders.com/391/391727.jpg'
+      imagen: '/src/imagen/harry5.jpg'
     },
     {
         id: 3,
@@ -24,7 +26,7 @@ const productos = [
         precio: "150",
         categoria: "aventura",
         stock: 10,
-        imagen: 'https://th.bing.com/th/id/R.16795c7446b06808a139572edd06353f?rik=l%2fnbpK43Z7Hndw&riu=http%3a%2f%2fwww.narniaweb.com%2fwp-content%2fuploads%2f2009%2f08%2f8991.jpg&ehk=hiwNT9Dphozi5HrmBJhUrPJI%2bUeFDvcfpHZNg0lwD%2bI%3d&risl=&pid=ImgRaw&r=0'
+        imagen: '/src/imagen/narnia.jpg'
       },
       {
         id: 4,
@@ -33,7 +35,7 @@ const productos = [
         precio: "140",
         categoria: "aventura",
         stock: 10,
-        imagen: 'https://www.themoviedb.org/t/p/original/hasOsiU3D4QFw9ciKGrbb55JbuA.jpg'
+        imagen: '/src/imagen/narnia2.jpg'
       },
       {
       id: 5,
@@ -54,14 +56,3 @@ const productos = [
       imagen: 'https://th.bing.com/th/id/OIP.mF8hZd3_gzktA2BZMTlcLAHaKr?rs=1&pid=ImgDetMain'
     }
     ]
-
-
-  const obtenerProductos = () => {
-    return new Promise ((resolve, reject) => {
-        setTimeout (() => {
-            resolve(productos)
-        }, 800);
-    });
-  };
-
-  export default obtenerProductos

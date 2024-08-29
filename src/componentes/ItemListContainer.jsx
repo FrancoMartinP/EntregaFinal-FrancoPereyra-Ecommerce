@@ -3,7 +3,7 @@ import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
 import { DotLoader } from "react-spinners";
 import {getDocs, collection, query, where} from "firebase/firestore"
-import db from "../database/db.js"; 
+import db from "../database/db.js";
 
 const ItemListContainer = () => {
   const [productos, setProductos] = useState ([]);
@@ -29,7 +29,7 @@ const ItemListContainer = () => {
         return { id: productDb.id, ...productDb.data() };
         
   });
-  setProductos(data)
+  setProductos(data) 
 };
 
   useEffect(() => {
