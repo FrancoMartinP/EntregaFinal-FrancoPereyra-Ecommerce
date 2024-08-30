@@ -12,8 +12,7 @@ import FormularioCompra from './componentes/FormularioCompra'
 import { CartProvider } from './context/CartContext'
 import Cart from './componentes/Carrito/Cart'
 
-/*import ComponentePadre from './componentes/ComponentePadre'
-import LogoHarry from './imagen/harry.jpg'*/
+
 
 const App = () => {
  return (

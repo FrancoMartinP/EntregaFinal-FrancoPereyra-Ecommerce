@@ -42,7 +42,7 @@ const ItemListContainer = () => {
 
   return (
     <div className="item">
-      <h2>Bienvenido a mi E-commerce</h2>
+      <h2 className="title">Bienvenido a mi E-commerce</h2>
       {estaCargando ? <div><DotLoader
   color="black"
   cssOverride={{}}

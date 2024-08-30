@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(48, 44, 44);
+    background-color: rgb(0, 0, 0);
 }
 .contenedor {
     background-image: url("imagen/fondo1.jpg");
@@ -11,12 +11,21 @@ body {
 .titulo {
 margin-left: 15%;
 font-size: 2rem;
-color: rgb(231, 237, 243);
+color: rgb(97, 100, 102);
+}
+.title {
+    color: rgb(197, 191, 186);
 }
 .carrito {
     margin-left: 25%;
-    color: rgb(222, 222, 233);
+    color: rgb(210, 210, 228);
+    padding: 30px;
+}
+
+.cantidad {
     padding: 20px;
+    color: aliceblue;
+    display: flex;
 }
 .cabecera {
     display: flex;
@@ -24,16 +33,16 @@ color: rgb(231, 237, 243);
     background-color: rgb(196, 145, 51);
 }
 .cabecera a{
-    color: rgb(20, 12, 12);
+    color: rgb(19, 16, 16);
     padding: 20px 35px;
     text-decoration: none;
 }
 .cabecera a:hover{
-    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.3rem 0.5rem rgba(7, 6, 6, 0.5);
 }
 .item {
     text-align: center;
-    background-color: rgb(128, 128, 128);
+
  
 }
 
@@ -41,18 +50,25 @@ color: rgb(231, 237, 243);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     width: 80%;
-    padding: 1px 30px;
+    padding: 20px 30px;
+
 }
 .prod a{
     text-decoration: none;
 }
-
+.cartaProducto {
+    border-width: 1px;
+    border-style: outset;
+    border-color: #6d6868; /* Color azul */
+    border-radius: 15px;
+}
 .cartaProducto:hover{
-    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.3rem 0.9rem rgba(206, 131, 32, 0.65);
+    
 }
 
 .texto {
-    color: black;
+    color: rgb(163, 153, 153);
     text-align: center;
     font-size: 1.5rem;
 }
