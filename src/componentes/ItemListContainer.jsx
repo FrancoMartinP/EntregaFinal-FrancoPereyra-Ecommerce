@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
 import { DotLoader } from "react-spinners";
-import {getDocs, collection, query, where} from "firebase/firestore"
+import {getDocs, collection, query, where} from "firebase/firestore";
 import db from "../database/db.js";
 
 const ItemListContainer = () => {
@@ -38,8 +38,6 @@ const ItemListContainer = () => {
     }else{
       getProducts()
     }
-
-      
   }, [idCategoria]);
 
   return (

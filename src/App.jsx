@@ -20,17 +20,17 @@ const App = () => {
  <BrowserRouter>
  <CartProvider>
 
- <div className='contenedor'>
-      <Link to="/">
+ <Link to="/" className='contenedor'>
+      <div>
         <img src={logoTienda} alt="" />
-      </Link>
+      </div>
       <div className='titulo'>
         <Titulo/>
       </div >
       <div className='carrito'>
         <CartWidget/>
       </div>
-    </div>
+    </Link>
     <NavBar/>
     <Routes>
       <Route path='/' element={<ItemListContainer className="item" />}/>
