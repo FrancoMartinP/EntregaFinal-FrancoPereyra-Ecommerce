@@ -13,7 +13,7 @@ const ItemDetail = ( {producto} ) => {
     setMostrarItemCount(false)
   }
   return (
-    <div className="item">
+    <div className="detallecard">
         <div>
             <img src={producto.imagen} width={200} />
             <h1>{producto.nombre}</h1>
@@ -22,7 +22,7 @@ const ItemDetail = ( {producto} ) => {
             <p>Sinopsis: {producto.descripcion}</p>
             <p><b>Precio: ${producto.precio}</b> </p>
             {mostrarItemCount ? (<ItemCount stock={producto.stock} agregarAlCarrito={agregarAlCarrito}/>) :
-            (<Link to="/cart">Ir al Carrito</Link>)}
+            (<Link className="agregar" to="/cart">Ir al Carrito</Link>)}
         </div>
        
     </div>

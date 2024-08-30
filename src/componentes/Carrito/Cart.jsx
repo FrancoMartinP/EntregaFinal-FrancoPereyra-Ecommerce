@@ -6,12 +6,12 @@ const Cart = () => {
 const { carrito, precioTotal, borrarProducto, vaciarCarrito} = useContext(CartContext)
 
   return (
-    <div>
+    <div className="detallecarrito">
         {
             carrito.map((productoCarrito) => (
                 <ul style={{flexDirection: "column"}}>
                     <li style={{display:"flex", justifyContent:"space-around"}}>
-                        <img width={150}src={productoCarrito.imagen} alt="" />
+                        <img width={80}src={productoCarrito.imagen} alt="" />
                         <p>{productoCarrito.nombre}</p>
                         <p> Cantidad: {productoCarrito.cantidad}</p>
                         <p> Precio: ${productoCarrito.precio}</p>
