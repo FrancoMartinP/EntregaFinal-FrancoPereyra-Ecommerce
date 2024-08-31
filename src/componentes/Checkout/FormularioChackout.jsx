@@ -1,6 +1,6 @@
 
-
 const FormularioChackout = ({datosForm, handleChangeInput, handleSubmitForm}) => {
+
   return (
     <form className="form" onSubmit={handleSubmitForm}>
             <label>Nombre: </label>
@@ -23,5 +23,4 @@ const FormularioChackout = ({datosForm, handleChangeInput, handleSubmitForm}) =>
     </form>
   )
 }
-
 export default FormularioChackout

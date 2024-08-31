@@ -26,15 +26,19 @@ if(carrito.length === 0) {
                         <p> Cantidad: {productoCarrito.cantidad}</p>
                         <p> Precio: ${productoCarrito.precio}</p>
                         <p>$ {productoCarrito.precio * productoCarrito.cantidad}</p>
-                        <button onClick={() => borrarProducto(productoCarrito.id)}>Eliminar</button>
+                        <button className="borrar" onClick={() => borrarProducto(productoCarrito.id)}>Eliminar</button>
                     </li>
                 </ul>
                 
             ))
         }
-        <h2>Precio Total: ${precioTotal()}</h2>
-        <button onClick={vaciarCarrito}>Vaciar Carrito</button>
-        <Link to="/checkout">Finalizar Compra</Link>   </div>
+        <div className="totalidad">
+            <h2>Precio Total: ${precioTotal()}</h2>
+            <Link className="final" onClick={vaciarCarrito}>Vaciar Carrito</Link>
+            <Link className="final" to="/checkout">Finalizar Compra</Link> 
+        </div>
+          
+    </div>
   )
 }
 

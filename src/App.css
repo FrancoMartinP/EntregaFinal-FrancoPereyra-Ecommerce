@@ -18,14 +18,20 @@ color: rgb(97, 100, 102);
 }
 .carrito {
     margin-left: 25%;
-    color: rgb(210, 210, 228);
-    padding: 30px;
+    color: rgb(9, 9, 10);
+    padding: 50px;
 }
 
 .cantidad {
-    padding: 20px;
-    color: aliceblue;
+    background-color: #050505;
+    color: rgb(255, 255, 255);
     display: flex;
+}
+.cantidad1 {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 40%;
 }
 .cabecera {
     display: flex;
@@ -73,11 +79,16 @@ color: rgb(97, 100, 102);
     font-size: 1.5rem;
 }
 .detallecarrito {
-    background-color: aliceblue;
-}
+   
+        border: 1px solid #ccc;
+        padding: 30px;
+        background-color: #a7a5a5;
+    }
+   
+
 .iniciocarrito {
     text-align: center;
-    background-color: #110e0b;
+    background-color: #0c0b0a;
     color: rgb(233, 225, 225);
     border: none;
 }
@@ -99,26 +110,21 @@ color: rgb(97, 100, 102);
     max-width: 700px;
     margin: auto;
 }
-
-.detallecard button {
-  background-color: #d4d2c0;
-  border-radius: 35px;
-  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
-  color: rgb(6, 7, 6);
-  cursor: pointer;
-  display: inline-block;
-  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
-  padding: 7px 20px;
-  text-align: center;
-  text-decoration: none;
-  transition: all 300ms;
-  font-size: 20px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  
+.borrar{
+    background-color: #050505;
+    color: rgb(236, 224, 224);
+    border: 1px solid rgb(236, 230, 230);
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 20%;
 }
-
+.totalidad {
+    text-align: center;
+    display: block;
+}
 .detallecard button:hover {
   box-shadow: rgba(108, 129, 116, 0.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
   transform: scale(1.05) rotate(-1deg);
@@ -165,4 +171,18 @@ form {
   .notificacion {
     color: white;
     text-align: center;
+  }
+  .final {
+    background-color: #5c5147;
+
+    color: rgb(233, 225, 225);
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(182, 174, 174);
+    border-radius: 5px;
+    box-sizing: border-box;
   }
