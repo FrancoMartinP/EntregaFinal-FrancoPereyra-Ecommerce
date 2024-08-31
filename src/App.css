@@ -75,6 +75,22 @@ color: rgb(97, 100, 102);
 .detallecarrito {
     background-color: aliceblue;
 }
+.iniciocarrito {
+    text-align: center;
+    background-color: #110e0b;
+    color: rgb(233, 225, 225);
+    border: none;
+}
+.inicioc {
+
+    color: white;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(231, 33, 33);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
 .detallecard {
     color: white;
     border: 0.85px solid #7a6c6c;
@@ -111,3 +127,42 @@ color: rgb(97, 100, 102);
     display: flex;
     justify-content: center;
 }
+form {
+    width: 25%;
+    max-width: 500px ;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid rgb(182, 174, 174);
+    border-radius: 10px;
+    background-color: #4c8554;
+  }
+
+  label {
+ 
+    margin-bottom: 8px;
+    font-weight: 100;
+  }
+  
+  input[type="text"], input[type="email"], button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(182, 174, 174);
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+    background-color: #110e0b;
+    color: rgb(233, 225, 225);
+    border: none;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #1d1b1a;
+  }
+  .notificacion {
+    color: white;
+    text-align: center;
+  }
