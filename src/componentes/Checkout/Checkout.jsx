@@ -44,7 +44,7 @@ const Checkout = () => {
     <div className="notificacion">
       {
         idOrden ? (<div>
-          <h2>Su compra fue aprobada 😎 </h2>
+          <h2>Felicidades {datosForm.nombre}, sos un genio/a! Su compra fue aprobada 😎 </h2>
           <p>Guarde su N° de Orden:  {idOrden} </p>
         </div>) : (      
           <FormularioChackout 
